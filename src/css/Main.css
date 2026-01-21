@@ -1,0 +1,160 @@
+
+:root{
+    --bg: #fffdfa;
+    --accent: #f7c6d9;
+    --text: #222;
+}
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+
+body {
+    font-family:Segoe UI, Roboto, Arial, sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.4;padding:1rem
+}
+
+header {
+    padding:1rem 0;text-align:center
+}
+
+#title {
+    font-size:1.6rem;
+    color:#333
+}
+
+main {
+    max-width:900px;margin:1rem auto
+}
+
+section {
+    margin:1rem 0;padding:0.5rem
+}
+
+ul {
+    list-style:disc;margin-left:1.25rem
+}
+
+@media (min-width:700px){#title{font-size:2rem}}
+
+/* Regras para miniaturas da galeria */
+
+.gallery {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+    gap:10px;margin-top:0.6rem
+}
+
+.gallery img {
+    width:100%;
+    height:110px;
+    object-fit:cover;
+    border: 1px solid rgb(245, 118, 228);
+    border-radius:6px;
+    display:block
+}
+
+.gallery-section-h2 {
+    margin-top:1rem;
+    font-size:1.8rem;
+    color: rgb(245, 118, 228);
+    padding: 10px;
+}
+
+.gallery-section-h2-videos {
+    margin-top:1rem;
+    font-size:1.8rem;
+    color: rgb(245, 118, 228);
+    padding: 10px;
+}
+
+.thumb-small {
+    width:120px;
+    height:90px;
+    object-fit:cover
+}
+
+@media (max-width:480px){
+    .gallery{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+    .gallery img{height:90px}
+}
+
+/* Lightbox (imagem em tela cheia) */
+
+.lightbox {
+    position:fixed;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,0,0,0.85);
+    z-index:9999
+}
+
+.lightbox img {
+    max-width:95%;
+    max-height:95%;
+    border-radius:6px;
+    box-shadow:0 8px 30px rgba(0,0,0,.6)
+}
+
+.lightbox .close {
+    position:absolute;
+    top:18px;
+    right:18px;
+    color:#fff;
+    font-size:1.6rem;
+    cursor:pointer;
+    padding:6px 10px;
+    border-radius:6px;
+    background:rgba(0,0,0,.35)
+}
+
+/* Vídeos: miniaturas e lightbox */
+
+.video-section-h2 {
+    margin-top:1rem;
+    font-size:1.8rem;
+    color: rgb(245, 118, 228);
+    padding: 10px;
+}
+
+.videos .video-thumb, .video-thumb {
+    height:110px;
+    object-fit:cover;
+    border-radius:6px;
+    border: 1px solid rgb(245, 118, 228);
+    display:block;
+    width:100%;
+}
+    
+.video-play-overlay {
+    position:relative;
+}
+
+.video-play-overlay::after {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:rgba(255,255,255,.85);
+    font-size:1.6rem;
+    pointer-events:none;
+    content:'▶';
+}
+
+.lightbox video {
+    max-height:95%;
+    border-radius:6px;
+    box-shadow:0 8px 30px rgba(0,0,0,.6);
+    max-width:95%;
+}
+
+.Credits {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #000000;
+}
