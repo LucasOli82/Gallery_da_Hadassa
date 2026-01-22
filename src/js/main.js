@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded',()=>{
                     'Assets/images/photo5.jpg', 'Assets/images/photo6.jpg', 
                     'Assets/images/photo7.jpg'];
 
-    // Vídeos: coloque arquivos em Assets/videos e adicione os nomes aqui
-    const VIDEOS = ['Assets/videos/Video (1).mp4', 'Assets/videos/Video (2).mp4',
-                    'Assets/videos/Video (3).mp4', 'Assets/videos/Video (4).mp4',
-                    'Assets/videos/Video (5).mp4'];
+    // Vídeos: coloque arquivos em Assets/Movies e adicione os nomes aqui
+    const VIDEOS = ['Assets/Videos/Video (1).mp4', 'Assets/Videos/Video (2).mp4',
+                    'Assets/Videos/Video (3).mp4', 'Assets/Videos/Video (4).mp4',
+                    'Assets/Videos/Video (5).mp4'];
 
     function showNoteIfEmpty(){
         if(IMAGES.length===0){
