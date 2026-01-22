@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded',()=>{
                     'Assets/images/photo7.jpg'];
 
     // Vídeos: coloque arquivos em Assets/Movies e adicione os nomes aqui
-    const VIDEOS = ['Assets/Videos/Video (1).mp4', 'Assets/Videos/Video (2).mp4',
-                    'Assets/Videos/Video (3).mp4', 'Assets/Videos/Video (4).mp4',
-                    'Assets/Videos/Video (5).mp4'];
+    const VIDEOS = ['Assets/Videos/Video-1.mp4', 'Assets/Videos/Video-2.mp4',
+                    'Assets/Videos/Video-3.mp4', 'Assets/Videos/Video-4.mp4',
+                    'Assets/Videos/Video-5.mp4'];
 
     function showNoteIfEmpty(){
         if(IMAGES.length===0){
@@ -123,3 +123,4 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
     }
 });
+
